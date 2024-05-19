@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Project</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Courier New", Courier, monospace;
+        width: 100%;
+        margin: auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        position: fixed;
+        background-color: blue;
+        width: 105%;
+        min-height: 30px;
+        z-index: 2;
+      }
+      .container {
+        margin: auto;
+        width: 90%;
+        
+      }
+      .logo {
+        float: left;
+      }
+      .menu {
+        float: right;
+      }
+      .logo a {
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        display: contents;
+      }
+      .menu a {
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: inline-block;
+        text-indent: 20px;
+        text-align: center;
+      }
+      .menu a:hover {
+        background-color: rgb(207, 189, 190);
+      }
+      .slide {
+        background-image: url(home2.jpg);
+        background-size: cover;
+        padding: 0px;
+        min-height: 530px;
+        position: relative;
+        font-size: 40px;
+        
+      }
+      .p-img {
+        width: 20%;        
+        top: 50px;
+        left: 0%;
+        position: absolute;
+      }
+
+      .slide h1 {
+        position: absolute;
+        top: 30px;
+        left: 15%;
+        font-size: 45px;
+        color: blue;
+        font-weight: 900;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .slide h2 {
+        position: absolute;
+        top: 80px;
+        left: 20%;
+        font-size: 35px;
+        color: blue;
+        font-weight: 700;
+        font-family: serif;
+      }
+      
+      .row1{
+        width: 95%;
+        margin-left:30px ;        
+        background-color: cadetblue;
+        position: relative;
+        border-radius: 20px;
+        
+       
+      }
+      
+     
+
+      .col1{
+        
+        width: 25%;
+        float: left;
+        border-radius: 20px;       
+        border: solid blue;
+        padding: 0px;
+        
+        
+      }
+      .match h1 {
+        font-family: fantasy;
+        padding-left: 100px;
+        color: rgba(28, 28, 181, 0.693); 
+        background-color: brown;  
+      }
+      .match h3 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 5px;
+        color: blueviolet;
+        padding-left: 100px;
+        background-color: coral;
+      }
+      
+      .row1::after {
+        content: "";
+        clear: both;
+        display: table;
+        
+      }    
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .row2::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      img {
+        width: 100px;
+      }
+     
+      .row{
+        width: 100%;
+        margin-left:70px ;
+      }
+      .col{
+       width: 25%;
+       float: left;
+      border-radius: 10px;
+      }
+      .col>image{
+        display: inline-block;
+        width: 100%;
+      }
+      .col>p{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0px;
+      }
+      .sts h1 {
+        font-style: italic;
+        font-family: fantasy;
+        font-size: xx-large;
+        background-color: blue;
+        color: aliceblue;
+        text-align: center;
+       
+      }
+      .sts h3{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+          font-size: x-large;
+          color: gold;
+          background-color: red;
+             }
+      .row2{
+        width: 95%;
+        margin-left: 0%;
+        position: relative;
+      }
+      .col2{
+        width: 25%;
+        float: left;
+        border-radius: 0px;       
+        border: burlywood solid;
+        padding: 50px;
+       }
+       .row3{
+        width: 95%;
+        position: relative;
+       }
+       .col3{
+        width: 33.33%;
+        float: left;
+        padding:50px ;
+       background-origin: padding-box;
+       }
+       footer{
+      text-align: center;
+      background-color: black;
+      color: azure;
+      margin-top: 20px;
+      padding: 20px;
+    }
+      
+      
+    </style>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <strong><a href="#">CHELSEA FC</a></strong>
+        </div>
+        <div class="menu">
+          <a href="#home">Home</a>
+          <a href="#matches">Matches</a>
+          <a href="#states">States</a>
+          <a href="#squad">Squad</a>
+          <a href="#trophies">Trophies</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- slide start -->
+    <div class="slide">
+      <h1>CHELSEA</h1>
+      <h2>Football Club</h2>
+      <img src="Chelsea-Logo.png" alt="" class="p-img" />
+    </div>
+    <!-- slide end -->
+    <!-- match start -->
+    <div class="match">
+    <h1>Upcoming Matches</h1>
+    <div class="row1">
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+    </div>
+    <div class="row1">
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+      <div class="col1">
+        <h3>Sunday.April.28</h3>
+        <h2>Aston Villa  Vs  Chelsea (1:30AM)</h2>         
+      </div>
+    </div>
+  </div>
+    <!-- match end -->
+    <!-- states start -->
+    
+      <div class="sts">
+        <h1>States</h1>
+        <h3>Goals</h3>
+        <div class="row">
+          <div class="col">
+            <img src="20.webp" alt="img" />
+            <p>name</p>
+            <p>goal</p>
+          </div>
+          <div class="col">
+            <img src="15.webp" alt="img" />
+            <p>name</p>
+            <p>goal</p>
+          </div>
+          <div class="col">
+            <img src="7.webp" alt="img" />
+            <p>name</p>
+            <p>goal</p>
+          </div>
+          <div class="col">
+            <img src="10.webp" alt="img" />
+            <p>name</p>
+            <p>goal</p>
+          </div>
+        </div>
+        <h3>Assists</h3>
+        <div class="row">
+          <div class="col">
+            <img src="3.webp" alt="img" />
+            <p>name</p>
+            <p>Assi</p>
+          </div>
+          
+          <div class="col">
+            <img src="7.webp" alt="img" >
+            <p>name</p>
+            <p>Ass</p>
+          </div>
+          <div class="col">
+            <img src="18.webp" alt="img"><br>
+            <p>name</p>
+            <p>Ass</p>
+          </div>
+          <div class="col">
+            <img src="11.webp" alt="img" />
+            <p>name</p>
+            <p>Ass</p>
+          </div>
+        </div>
+      </div>
+   
+
+    <!-- states end -->
+    <!-- squad start -->
+    <div class="squad">
+      <h1>Squad</h1>
+      <div class="row2">
+        <div class="col2">
+          <img src="head coach.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="coach1.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="coach2.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="assistant head coach.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <h2>players</h2>
+      <div class="row2">
+        <div class="col2">
+          <img src="1.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="28.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="13.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="2.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="3.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="5.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="6.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="7.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="8.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="10.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="11.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="14.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="15.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="16.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="17.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="18.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="20.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="21.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="23.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="24.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="25.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="26.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="27.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="31.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="col2">
+          <img src="33.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="36.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="42.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+        <div class="col2">
+          <img src="45.webp" alt="img2">
+          <h3>name</h3>
+          <h2>rank</h2>
+        </div>
+      </div>
+      </div>
+
+
+
+    <!-- squad end -->
+    <!-- Trophies start -->
+    <div class="trophy">
+      <h1>Trophies</h1>
+      <div class="row3">
+        <div class="col3">
+          <img src="cl.png" alt="img3">
+          <h3>Premier League</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="pl.png" alt="img3">
+          <h3>Champion League</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="el.png" alt="img3">
+          <h3>FA Cup</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="col3">
+          <img src="fa.png" alt="img3">
+          <h3>UEFA Super Cup</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="cwc.png" alt="img3">
+          <h3>Club World Cup</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="sc.png" alt="img3">
+          <h3>Community Shield</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="col3">
+          <img src="efl.png" alt="img3">
+          <h3>UEFA Super Cup</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="cs.png" alt="img3">
+          <h3>Club World Cup</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+        <div class="col3">
+          <img src="chs.png" alt="img3">
+          <h3>Community Shield</h3>
+          <p>Winner:</p>
+          <p>Runner Up:</p>
+        </div>
+      </div>
+    </div>
+    <!-- Trophies end -->
+    <!-- Footer Start -->
+   <footer>
+    Created by TMA
+   </footer>
+    <!-- Footer end -->
+
+  </body>
+</html>
